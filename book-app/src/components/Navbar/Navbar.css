@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.nav {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 5rem;
+}
+
+.logo {
+  max-width: 100px; 
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2rem; 
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-links a, .auth a{
+  text-decoration: none;
+  color: black;
+}
+
+
+.nav-links a:hover{
+  color: #BD8E49;
+}
+
+
+
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.auth a:hover{
+  color: #BD8E49;
+}
+
+.auth button{
+  background-color: #BD8E49;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.auth button:hover{
+  background-color: transparent;
+  border: 1px solid #BD8E49;
+  color: #BD8E49;
+}
