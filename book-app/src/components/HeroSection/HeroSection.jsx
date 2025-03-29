@@ -54,8 +54,12 @@ export const HeroSection = () => {
           </div>
         </header>
       </section>
+      
 
-    
+      {loading && <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading...</p>}
+      {error && <p style={{ textAlign: 'center', color: 'red', marginTop: '2rem' }}>{error}</p>}
+      {!loading && !error && books.length > 0 && <BookList books={books} />}
+
     </>
   )
 }
