@@ -3,8 +3,8 @@ import Navbar from './components/Navbar/Navbar'
 import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Favorites from "./Pages/Favorites"
-import { HeroSection } from "./components/HeroSection/HeroSection"
 import BookDetails from "./Pages/BookDetails"
+import Footer from "./components/Footer/Footer"
 
 
 function App() {
@@ -30,6 +30,8 @@ function App() {
 
 
       </Routes>
+
+      <Footer />
 
 
       
