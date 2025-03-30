@@ -7,29 +7,37 @@ export const HeroSection = () => {
   const [books, setBooks] = useState([])
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+  const [count, setCount] = useState(15)
 
   const handleSearch = async () => {
-    if (!query.trim()) 
-      
+    if (!query.trim()) {
       return setError('Please enter a book search')
+    }
+
+    setLoading(true)
+    setError('')
+    setCount(15)
 
     try {
-      const response = await fetch(`https://openlibrary.org/search.json?q=${query}`)
+      const response = await fetch(`https://openlibrary.org/search.json?q=${query}&limit=100`)
       if (!response.ok) throw new Error("Book search Failed")
       const data = await response.json()
+
       if (data.docs.length === 0) {
         setError('No books found. Try another search.')
+      } else {
+        setBooks(data.docs.filter(book => book.cover_i))
       }
-
-      setBooks(data.docs)
     } catch (error) {
       setError('Something went wrong. Please try again.')
-      
     } finally {
       setLoading(false)
     }
   }
-  
+
+  const handleShowMore = () => {
+    setCount(prev => prev + 15)
+  }
 
   return (
     <>
@@ -56,11 +64,22 @@ export const HeroSection = () => {
         </header>
       </section>
 
-
       {loading && <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading...</p>}
       {error && <p style={{ textAlign: 'center', color: 'red', marginTop: '2rem' }}>{error}</p>}
-      {!loading && !error && books.length > 0 && <BookList books={books} />}
 
+      {!loading && !error && books.length > 0 && (
+        <>
+          <BookList books={books.slice(0, count)} />
+
+          {count < books.length && (
+            <div className="show-more-container">
+              <button onClick={handleShowMore} className="show-more-button">
+                Show More
+              </button>
+            </div>
+          )}
+        </>
+      )}
     </>
   )
 }
