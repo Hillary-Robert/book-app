@@ -1,9 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 const Favorites = () => {
   return (
-    <div>Favorites</div>
-  )
-}
 
-export default Favorites
+    <div style={{
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight: '100vh'
+    }}>
+      
+      <main style={{ flex: 1, padding: '5rem', textAlign: 'center' }}>
+        <h1>Log in or Sign in to view Favorites</h1>
+      </main>
+
+    </div>
+
+  );
+};
+
+export default Favorites;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import AuthModal from '../components/AuthModal/AuthModal'
 import './BookDetails.css'
+import Favorites from './Favorites'
 
 const BookDetails = () => {
   const { id } = useParams()
