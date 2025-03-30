@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './HeroSection.css'
+import BookList from '../BookList/BookList.jsx'
 
 export const HeroSection = () => {
   const [query, setQuery] = useState('')
@@ -54,7 +55,7 @@ export const HeroSection = () => {
           </div>
         </header>
       </section>
-      
+
 
       {loading && <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading...</p>}
       {error && <p style={{ textAlign: 'center', color: 'red', marginTop: '2rem' }}>{error}</p>}
