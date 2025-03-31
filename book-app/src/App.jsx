@@ -5,6 +5,8 @@ import About from "./Pages/About"
 import Favorites from "./Pages/Favorites"
 import BookDetails from "./Pages/BookDetails"
 import Footer from "./components/Footer/Footer"
+import Login from './Pages/Login'
+import Signup from './Pages/Signup'
 
 
 function App() {
@@ -27,6 +29,10 @@ function App() {
         <Route path="/favorites" element={<Favorites />} />
 
         <Route path="/book/:id" element={<BookDetails />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/signup" element={<Signup />} />
 
 
       </Routes>

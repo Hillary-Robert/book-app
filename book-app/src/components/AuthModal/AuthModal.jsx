@@ -1,5 +1,6 @@
 import React from 'react'
 import './AuthModal.css'
+import { NavLink } from 'react-router-dom'
 
 const AuthModal = ({ onClose }) => {
   return (
@@ -9,8 +10,16 @@ const AuthModal = ({ onClose }) => {
         <p>You must be signed in to read this book.</p>
 
         <div className="modal-buttons">
-          <button onClick={() => alert(`Can't sign up now, try again later`)}>Sign Up</button>
-          <button onClick={() => alert(`Can't Log in now, try again later`)}>Log In</button>
+
+          <NavLink to="/signup">
+          <button>Sign Up</button> 
+          </NavLink>
+          
+
+          <NavLink to="/login">
+          <button>Log in</button> 
+          </NavLink>
+          
         </div>
 
         <button className="close-btn" onClick={onClose}>✖</button>

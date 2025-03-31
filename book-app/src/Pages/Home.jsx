@@ -25,7 +25,7 @@ const Home = () => {
       <HeroSection />
 
       <section style={{ padding: '2rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}>📚 Suggested Books</h2>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem' }}> Suggested Books 📚</h2>
         {suggestedBooks.length > 0 ? (
           <BookList books={suggestedBooks} />
         ) : (

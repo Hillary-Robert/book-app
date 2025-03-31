@@ -19,7 +19,7 @@ export const HeroSection = () => {
     setCount(15)
 
     try {
-      const response = await fetch(`https://openlibrary.org/search.json?q=${query}&limit=100`)
+      const response = await fetch(`https://openlibrary.org/search.json?q=${query}&limit=30`)
       if (!response.ok) throw new Error("Book search Failed")
       const data = await response.json()
 
@@ -62,6 +62,7 @@ export const HeroSection = () => {
             </button>
           </div>
         </header>
+
       </section>
 
       {loading && <p style={{ textAlign: 'center', marginTop: '2rem' }}>Loading...</p>}
@@ -69,6 +70,7 @@ export const HeroSection = () => {
 
       {!loading && !error && books.length > 0 && (
         <>
+          <h2 style={{ textAlign: 'left', fontSize: '1.8rem', margin: '2rem 0' }}>Search Results 📚</h2>
           <BookList books={books.slice(0, count)} />
 
           {count < books.length && (

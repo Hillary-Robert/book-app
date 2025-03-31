@@ -35,10 +35,15 @@ const Navbar = () => {
       <div className="auth">
 
           <p>
-            <a href="">Sign in</a>
+            <NavLink to={"/login"}>Log in</NavLink>
           </p>
 
-          <button>Sign up</button>
+
+          <NavLink to={"/signup"}>
+            <button >Sign up</button>
+          </NavLink>
+
+          
 
       </div>
 

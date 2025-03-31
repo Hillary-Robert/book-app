@@ -1,0 +1,97 @@
+.lnSContainter {
+  text-align: center;
+  padding: 4rem 5rem 4rem 5rem;
+  background-color: #f2f2f2;
+}
+
+.lnSContainter h1 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.lnSContainter p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  
+}
+
+.form {
+  width: 100%;
+  max-width: 420px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+  
+}
+
+.form h4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #BD8E49;
+  outline: none;
+  box-shadow: 0 0 5px rgba(189, 142, 73, 0.4);
+}
+
+
+.form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #BD8E49;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: transparent;
+  border: 1px solid #BD8E49;
+  color: #BD8E49;
+}
+
+
+.form p {
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+.form a {
+  color: #BD8E49;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
