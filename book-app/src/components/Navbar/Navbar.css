@@ -115,7 +115,7 @@ nav a:hover,
   .nav .close-btn{
     position: absolute;
     top: 1rem;
-    left: 25rem;
+    right: 2rem;
   }
 
   .nav a{
