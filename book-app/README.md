@@ -10,7 +10,7 @@ Show more books with a "Show More" button
 Click "Read Book" to see a sign-up or login message
 Works well on phones, tablets, and computers
 
-## 🛠 Tools Used
+## Tools Used
 
 React
 HTML & CSS

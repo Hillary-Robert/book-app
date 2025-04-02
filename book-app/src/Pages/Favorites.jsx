@@ -10,7 +10,7 @@ const Favorites = () => {
     }}>
       
       <main style={{ flex: 1, padding: '5rem', textAlign: 'center' }}>
-        <h1>Log in or Sign in to view Favorites</h1>
+        <h1>Page not ready</h1>
       </main>
 
     </div>

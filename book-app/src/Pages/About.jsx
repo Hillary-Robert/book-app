@@ -9,8 +9,8 @@ const About = () => {
       minHeight: '100vh'
     }}>
       
-      <main style={{ flex: 1, padding: '5rem', textAlign: 'center' }}>
-        <h1>Log in or Sign up to learn more about us</h1>
+      <main style={{ paddingTop: '5rem', textAlign: 'center' }}>
+        <h1>Page not ready</h1>
       </main>
 
     </div>

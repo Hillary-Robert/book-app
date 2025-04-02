@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import './BookCard.css'
 
 const BookCard = ({ book }) => {
+
+  // console.log(book)
   const navigate = useNavigate()
 
   const handleClick = () => {
@@ -19,8 +21,9 @@ const BookCard = ({ book }) => {
     <div className="book-card" onClick={handleClick}>
       <img src={coverUrl} alt={book.title} />
       <h3>{book.title}</h3>
-      <p>{book.author_name?.join(', ')}</p>
-      <p>{book.publisher?.[0]}</p>
+      <p>{book.author_name}</p> 
+      <p>Published: {book.first_publish_year}</p> 
+      <p>Edition: {book.edition_count}</p>  
     </div>
   )
 }

@@ -3,6 +3,10 @@ import './Navbar.css'
 import {NavLink} from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { useRef } from 'react'
+import img1 from '../../assets/logo.png';
+
+
+
 
 
 const Navbar = () => {
@@ -17,7 +21,7 @@ const Navbar = () => {
 
     <header className='nav-header'> 
 
-      <img className='logo' src='./public/logo.png' alt="logo" />
+      <img className="logo" src={img1} alt="logo" />
 
       <nav ref={navRef} className='nav'> 
 

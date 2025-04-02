@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import AuthModal from '../components/AuthModal/AuthModal'
 import './BookDetails.css'
-import Favorites from './Favorites'
 
 const BookDetails = () => {
   const { id } = useParams()
@@ -17,6 +16,7 @@ const BookDetails = () => {
         const response = await fetch(`https://openlibrary.org/works/${id}.json`)
         if (!response.ok) throw new Error('Failed to fetch book details')
         const data = await response.json()
+        console.log(data)
         setBookDetails(data)
       } catch (err) {
         setError('Could not load book details.')
@@ -27,6 +27,8 @@ const BookDetails = () => {
 
     fetchDetails()
   }, [id])
+
+  
 
   if (loading) return <p style={{ textAlign: 'center' }}>Loading book details...</p>
   if (error) return <p style={{ color: 'red', textAlign: 'center' }}>{error}</p>

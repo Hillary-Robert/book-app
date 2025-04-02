@@ -19,29 +19,27 @@ function App() {
 
       <Navbar />  
 
+      <main className={{flex: 1}}> 
+        <Routes>
 
-      <Routes>
+          <Route path="/" element={<Home />} />
 
-        <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
 
-        <Route path="/about" element={<About />} />
+          <Route path="/favorites" element={<Favorites />} />
 
-        <Route path="/favorites" element={<Favorites />} />
+          <Route path="/book/:id" element={<BookDetails />} />
 
-        <Route path="/book/:id" element={<BookDetails />} />
+          <Route path="/login" element={<Login />} />
 
-        <Route path="/login" element={<Login />} />
-
-        <Route path="/signup" element={<Signup />} />
-
-
-      </Routes>
-
-      <Footer />
+          <Route path="/signup" element={<Signup />} />
 
 
-      
-      
+        </Routes>
+
+      </main>
+
+      <Footer /> 
     </>
   )
 }

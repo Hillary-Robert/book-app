@@ -14,10 +14,12 @@ const Login = () => {
   return (
 
 
-    <>
+    <div style={{marginBottom: "10rem"}}>
 
       <div className='lnSContainter'>
           <h1>Welcome Back</h1>
+
+          <p>Continue with us and enjoy free online books, online communities and many more</p>
          
       </div>
       <div className="container">
@@ -47,7 +49,7 @@ const Login = () => {
         </form>
       </div>
 
-    </>
+    </div>
   )
 }
 

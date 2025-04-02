@@ -70,7 +70,7 @@ export const HeroSection = () => {
 
       {!loading && !error && books.length > 0 && (
         <>
-          <h2 style={{ textAlign: 'left', fontSize: '1.8rem', margin: '2rem 0' }}>Search Results 📚</h2>
+          <h2 style={{ textAlign: 'center', fontSize: '1.8rem', margin: '2rem 0' }}>Search Results 📚</h2>
           <BookList books={books.slice(0, count)} />
 
           {count < books.length && (
