@@ -3,14 +3,15 @@
   background-size: cover;
   background-position: center; 
   background-repeat: no-repeat;
-  height: 100%;
+  height: auto;
   width: 100%; 
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: 0;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  
 
 }
 
@@ -23,6 +24,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);  
   z-index: -1;
+  
   
 }
 
@@ -142,6 +144,38 @@
 }
 
 
+.falling-text {
+  display: inline-block;
+  animation: fallIn 2s ease-in-out infinite;
+}
+
+@keyframes fallIn {
+  0% {
+    transform: translateY(-100px);
+    opacity: 0;
+    color: #BD8E49;
+  }
+  40% {
+    opacity: 1;
+    color: white;
+  }
+
+  60% {
+    transform: translateY(10px);
+    color: #BD8E49;
+  }
+
+  80% {
+    transform: translateY(-5px);
+    color: white;
+  }
+  100% {
+    transform: translateY(0);
+    color: #BD8E49;
+  }
+}
+
+
 
 
 
@@ -186,7 +220,7 @@
 
 @media (max-width: 480px) {
   .hero-section header {
-    padding: 6rem 1rem;
+    padding: 2rem 1rem;
     gap: 2.5rem;
   }
 

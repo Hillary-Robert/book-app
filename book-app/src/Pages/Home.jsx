@@ -28,28 +28,47 @@ const Home = () => {
       <HeroSection />
 
 
+      <section className="about" style={{display: "flex", justifyContent: "center", alignItems: "center", textAlign: "center", gap: "1rem", padding: '0 5rem',  margin: "4rem 0",  flexDirection: "row"}}>
 
-      <div style={{display: "flex", flexDirection:"column", justifyContent: "center", alignItems: "center", textAlign: "center", gap: "2rem", padding: '5% 15%'}}>
-        <h1>About us</h1>
+        <div className="video-container" style={{width: "100%"}}>
+          
+          <iframe width="750" height="450" src="https://www.youtube.com/embed/jdjYt7DFsZg?si=3-v5yy9iYVMxiuOv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    
+        <div style={{display: "flex", flexDirection:"column", justifyContent: "center", alignItems: "center", textAlign: "center", gap: "4rem"}} className='about-section'>
+        <h1>We Are Here To Better Your Experience</h1>
 
-        <p style={{padding: "0 5rem"}}> 
-          Book Search Library is a simple online tool that helps   you find books quickly and easily. Whether you're looking for a classic novel, a modern bestseller, or a hidden gem, our app connects you with the right titles using real-time search from the Open Library. <br />With just a few clicks, you can explore book covers, descriptions, and more — all in one place. We believe that everyone should have easy access to books, and we’ve made it our goal to make book discovery fast, fun, and accessible to all. <br /> 
-          <spa> 
-            <Link to={"/about"} style={{color: "#BD8E49", textDecoration: "none", fontWeight: "bold"}}>Read more...
-            </Link> 
-          </spa>
-        </p>
-         
-      </div> 
+          <p> 
+            Book Search Library is a simple online tool that helps   you find books quickly and easily. Whether you're looking for a classic novel, a modern bestseller, or a hidden gem, our app connects you with the right titles using real-time search from the Open Library. <br />With just a few clicks, you can explore book covers, descriptions, and more — all in one place. We believe that everyone should have easy access to books, and we’ve made it our goal to make book discovery fast, fun, and accessible to all. <br /> 
+            <spa> 
+              <Link to={"/about"} style={{color: "#BD8E49", textDecoration: "none", fontWeight: "bold"}}>Read more...
+              </Link> 
+            </spa>
+          </p>
+          
+        </div> 
 
-      <section style={{ padding: '2rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1rem', textAlign: "center", marginBottom: "2rem"}}> Suggested Fictions 📚</h2>
+
+      </section>
+
+      <section >
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', textAlign: "center", marginBottom: "2rem"}}> Suggested Fictions 📚</h2>
 
         {suggestedBooks.length > 0 ? (
           <BookList books={suggestedBooks} />
         ) : (
           <p>Loading suggestions...</p>
         )}
+      </section>
+
+
+      <section>
+
+        
+
+        
+
+
       </section>
     </>
   )

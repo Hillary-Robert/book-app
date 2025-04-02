@@ -11,7 +11,7 @@
 }
 
 .book-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .book-card img {

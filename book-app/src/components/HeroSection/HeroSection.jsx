@@ -44,7 +44,9 @@ export const HeroSection = () => {
       <section className='hero-section'>
         <header>
           <div className='title-text'>
-            <h1>Discover Your Next Favorite Book 📚</h1>
+            <h1>
+              <span className="falling-text">Discover</span> Your Next Favorite Book 📚
+            </h1>
             <p>Whether you're chasing a new adventure, revisiting an old favorite, or discovering a hidden gem — search, explore, and save the stories that move you.</p>
           </div>
 
