@@ -149,6 +149,13 @@
   animation: fallIn 2s ease-in-out infinite;
 }
 
+
+.sliding-text{
+  display: inline-block;
+  animation: slidehero 2s ease-in-out infinite;
+
+}
+
 @keyframes fallIn {
   0% {
     transform: translateY(-100px);
@@ -171,6 +178,14 @@
   }
   100% {
     transform: translateY(0);
+    color: #BD8E49;
+  }
+}
+
+@keyframes slidehero {
+  
+  100% {
+    transform: translateX(0);
     color: #BD8E49;
   }
 }

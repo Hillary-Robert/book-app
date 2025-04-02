@@ -10,11 +10,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-
-body {
+html, body {
+  overflow-x: hidden;
   min-height: 100vh;
 }
+
 
 
 .about-section, .about {
@@ -36,5 +36,10 @@ body {
   .about{
     width: 100%;
     flex-wrap: wrap;
+  }
+
+  iframe{
+    width: 100%;
+    height: 25rem;
   }
 }

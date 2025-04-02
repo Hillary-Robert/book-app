@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchSuggested = async () => {
       try {
-        const res = await fetch('https://openlibrary.org/search.json?subject=fiction&limit=8')
+        const res = await fetch('https://openlibrary.org/search.json?subject=love&fiction&limit=8')
         const data = await res.json()
         
         setSuggestedBooks(data.docs)
@@ -52,7 +52,7 @@ const Home = () => {
       </section>
 
       <section >
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', textAlign: "center", marginBottom: "2rem"}}> Suggested Fictions 📚</h2>
+        <h2 style={{ fontSize: '1.8rem', marginBottom: '1.5rem', textAlign: "center", marginBottom: "2rem"}}> Suggested Books 📚</h2>
 
         {suggestedBooks.length > 0 ? (
           <BookList books={suggestedBooks} />

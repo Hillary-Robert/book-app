@@ -45,7 +45,7 @@ export const HeroSection = () => {
         <header>
           <div className='title-text'>
             <h1>
-              <span className="falling-text">Discover</span> Your Next Favorite Book 📚
+              <span className="falling-text">Discover Your Next</span>  <span className='sliding-text'> Favorite Book 📚</span>
             </h1>
             <p>Whether you're chasing a new adventure, revisiting an old favorite, or discovering a hidden gem — search, explore, and save the stories that move you.</p>
           </div>
