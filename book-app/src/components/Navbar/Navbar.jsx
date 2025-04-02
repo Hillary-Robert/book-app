@@ -1,5 +1,5 @@
 import React from 'react'
-import './Navbar.CSS'
+import './Navbar.css'
 import {NavLink} from 'react-router-dom'
 import {FaBars, FaTimes} from 'react-icons/fa'
 import { useRef } from 'react'
